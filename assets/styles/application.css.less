@@ -1,0 +1,54 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+
+.top-bar {
+  background-color: #3098d8;
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.element.html {
+  .icon {
+    opacity: 1;
+    transition: all linear 0.1s;
+    fill: #E5EAEF;
+    font-size: 14px;
+  }
+
+  &.highlighted .icon {
+     fill: #66AC3F;
+   }
+
+  &.highlighted.nolink .icon {
+     fill: #C4434B;
+   }
+
+  &.selected .icon {
+     fill: #EFBE2C;
+   }
+
+  &:hover {
+  .icon {
+    opacity: 0;
+    transition: all linear 0.1s;
+  }
+  }
+
+  .country {
+    font-size: 10px;
+    fill: #373737;
+  }
+
+  .name {
+    font-size: 14px;
+  }
+}

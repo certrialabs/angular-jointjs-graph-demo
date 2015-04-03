@@ -1,0 +1,35 @@
+<div class="top-bar">angular-jointjs-graph demo application</div>
+<div ng-app="app" ng-controller="GraphResourcesController">
+  <graph config-factory="GraphConfig">
+    <graph-side-panel-tools>
+      <graph-node>
+        <text class="name"></text>
+        <text class="country"></text>
+        <g transform="translate(235, 15)">
+          <text class="icon beneficiary" style="font-family:ce-icons;"></text>
+          <text class="icon company" style="font-family:ce-icons;"></text>
+        </g>
+      </graph-node>
+      <graph-new-entity entity-identifier="beneficiary">
+        <i class="ce-icon-user"></i>Beneficiary
+      </graph-new-entity>
+      <graph-new-entity entity-identifier="company">
+        <i class="ce-icon-folder"></i>Company
+      </graph-new-entity>
+      <graph-existing-entities entity-identifier="beneficiary">
+        <div ng-click="selectEntity(entity, entityIdentifier)">
+          <i class="ce-icon-user"></i>
+          <span class="text">{{ entity.name || "&lt;name&gt;"}}</span>
+        </div>
+      </graph-existing-entities>
+      <graph-existing-entities entity-identifier="company">
+        <div ng-click="selectEntity(entity, entityIdentifier)">
+          <i class="ce-icon-folder"></i>
+          <span class="text">{{ entity.name || "&lt;name&gt;"}}</span>
+        </div>
+      </graph-existing-entities>
+    </graph-side-panel-tools>
+    <graph-side-panel-details>
+    </graph-side-panel-details>
+  </graph>
+</div>
