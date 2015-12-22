@@ -29,8 +29,8 @@
     -->
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/bower_components/joint/dist/joint.nojquerynobackbone.min.css">
-    <link rel="stylesheet" href="/bower_components/angular-jointjs-graph/dist/styles/angular-jointjs-graph.min.css">
+    <link rel="stylesheet" href="/bower_components/joint/dist/joint.min.css">
+    <link rel="stylesheet" href="/bower_components/angular-jointjs-graph/dist/styles/angular-jointjs-graph.css">
     <!--STYLES-->
     <link rel="stylesheet" href="/styles/iconStyles.css">
     <link rel="stylesheet" href="/styles/importer.css">
@@ -90,25 +90,27 @@
           + Use a different preprocessor, like TypeScript
 
     -->
-    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="/bower_components/underscore/underscore-min.js"></script>
-    <script src="/bower_components/lodash/lodash.min.js"></script>
+    <script src="/bower_components/jquery/jquery.js"></script>
+    <script src="/bower_components/underscore/underscore.js"></script>
+    <script src="/bower_components/lodash/lodash.js"></script>
     <script src="/bower_components/backbone/backbone.js"></script>
-    <script src="/bower_components/joint/dist/joint.nojquerynobackbone.min.js"></script>
-    <script src="/bower_components/angular/angular.min.js"></script>
-    <script src="/bower_components/angular-resource/angular-resource.min.js"></script>
-    <script src="/bower_components/angular-jointjs-graph/dist/scripts/angular-jointjs-graph.min.js"></script>
+    <script src="/bower_components/graphlib/dist/graphlib.core.js"></script>
+    <script src="/bower_components/dagre/dist/dagre.core.js"></script>
+    <script src="/bower_components/joint/dist/joint.js"></script>
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular-resource/angular-resource.js"></script>
+    <script src="/bower_components/angular-jointjs-graph/dist/scripts/angular-jointjs-graph.js"></script>
     <!--SCRIPTS-->
     <script src="/js/dependencies/sails.io.js"></script>
     <script src="/js/app.js"></script>
     <script src="/js/controllers/graphResourcesController.js"></script>
     <script src="/js/services/beneficiaryCallbacks.js"></script>
     <script src="/js/services/companyCallbacks.js"></script>
-    <script src="/js/services/graphConfig.js"></script>
     <script src="/js/services/graphResources.js"></script>
     <script src="/js/services/linkCallbacks.js"></script>
     <script src="/js/services/linkParams.js"></script>
     <script src="/js/services/nodeParams.js"></script>
+    <script src="/js/templates.js"></script>
     <!--SCRIPTS END-->
   </body>
 </html>

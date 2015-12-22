@@ -1,15 +1,7 @@
 <div class="top-bar">angular-jointjs-graph demo application</div>
 <div class="graph-main" ng-app="app" ng-controller="GraphResourcesController">
-  <graph config-factory="GraphConfig">
+  <graph>
     <graph-side-panel-tools>
-      <graph-node>
-        <text class="name"></text>
-        <text class="country"></text>
-        <g transform="translate(235, 15)">
-          <text class="icon beneficiary" style="font-family:ce-icons;"></text>
-          <text class="icon company" style="font-family:ce-icons;"></text>
-        </g>
-      </graph-node>
       <graph-new-entity entity-identifier="beneficiary">
         <i class="ce-icon-user"></i>Beneficiary
       </graph-new-entity>
