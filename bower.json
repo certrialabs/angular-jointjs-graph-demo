@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "description": "Demo application for the angular-jointjs-graph framework",
   "dependencies": {
-    "angular-jointjs-graph": "~0.1.9"
+    "angular-jointjs-graph": "~0.1.9",
+    "dagre": "0.7.3"
   },
   "private": true,
   "ignore": [
